@@ -1,0 +1,165 @@
+* {
+  position: relative;
+  font-family: sans-serif;
+  vertical-align: top; }
+
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #222;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+
+.phone {
+  width: 250px;
+  padding: 10px;
+  background-color: #eee;
+  border-radius: 10px;
+  -webkit-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  left: 0; }
+
+.top {
+  height: 40px; }
+  .top .camera {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background-color: #333;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); }
+
+.screen {
+  height: 350px;
+  -webkit-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  overflow: hidden;
+  cursor: pointer; }
+  .screen .pages {
+    width: 100%;
+    height: 100%;
+    white-space: nowrap;
+    font-size: 0px;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+    left: 0px; }
+    .screen .pages .page {
+      font-size: initial;
+      display: inline-block;
+      background-color: #333;
+      width: 100%;
+      height: 100%;
+      padding: 10px;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      position: relative;
+      white-space: normal;
+      color: #eee;
+      font-size: 12px; }
+      .screen .pages .page p {
+        margin-top: 30px; }
+      .screen .pages .page h2 {
+        color: white;
+        font-size: 20px;
+        margin: 0; }
+      .screen .pages .page:before {
+        position: absolute;
+        content: "";
+        display: block;
+        background-color: #f1ac45;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 60px; }
+      .screen .pages .page:after {
+        position: absolute;
+        content: "";
+        display: block;
+        background-color: #f1ac45;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 20px; }
+    .screen .pages .page1 {
+      background-color: #f1ac45;
+      color: white; }
+      .screen .pages .page1 h2 {
+        font-style: 20px;
+        margin-bottom: 0px; }
+      .screen .pages .page1 h1 {
+        font-style: 30px;
+        margin-top: 0px; }
+      .screen .pages .page1 .orange {
+        width: 300px;
+        height: 300px;
+        background-color: #f99d23;
+        border-radius: 100%; }
+
+.bottom {
+  height: 60px; }
+  .bottom .button {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    border: solid 1px rgba(0, 0, 0, 0.2);
+    cursor: pointer; }
+    .bottom .button:hover {
+      background-color: #ddd; }
+    .bottom .button .rect {
+      width: 15px;
+      height: 15px;
+      left: 50%;
+      top: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      border: solid 1px rgba(0, 0, 0, 0.4); }
+
+.status, .phonename {
+  color: white;
+  margin: 0; }
+
+.status {
+  font-size: 15px;
+  margin-top: 20px; }
+
+.phonename {
+  margin: 10px; }
+
+.buttons {
+  margin-top: 20px; }
+  .buttons button {
+    background-color: transparent;
+    border: solid 1px rgba(255, 255, 255, 0.2);
+    color: white;
+    padding: 5px 14px;
+    border-radius: 5px;
+    cursor: pointer; }
+    .buttons button:hover {
+      background-color: #fff;
+      color: #333; }
